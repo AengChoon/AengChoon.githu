@@ -17,10 +17,10 @@ nav_order: 1
 |:----------|:----------------------|:--------------:|:-----------:|
 | `char`    | Byte                  | b              | 1           |
 | `short`   | Word                  | w              | 2           |
-| `int`,    | Double Word           | l              | 4           |
-| `long`,   | Quad Word             | q              | 8           |
-| `char*`,  | Quad Word             | q              | 8           |
-| `float`,  | Single precision      | s              | 4           |
+| `int`     | Double Word           | l              | 4           |
+| `long`    | Quad Word             | q              | 8           |
+| `char*`   | Quad Word             | q              | 8           |
+| `float`   | Single precision      | s              | 4           |
 | `double`  | Double precision      | l              | 8           |
 
-부동소수점 코드는 완전히 다른 명령어와 레지스터 세트를 포함하므로 4바이트 정수와 8바이트 배정밀도 부동 소수점 숫자 모두를 접미사 'l'로 구분해도 상관없다.
+부동소수점 코드는 완전히 다른 명령어와 레지스터 세트를 사용하므로 `int`와 `double`의 접미사 'l'이 겹쳐도 상관없다.
