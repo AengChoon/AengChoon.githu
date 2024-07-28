@@ -23,4 +23,4 @@ nav_order: 1
 | `float`   | Single precision      | s              | 4           |
 | `double`  | Double precision      | l              | 8           |
 
-부동소수점 코드는 완전히 다른 명령어와 레지스터 세트를 사용하므로 `int`와 `double`의 접미사 'l'이 겹쳐도 상관없다.
+부동소수점 코드는 완전히 다른 명령어와 레지스터 세트를 사용하므로 `int`와 `double`의 접미사 'l'이 같아도 구분하는 데 문제없다.
