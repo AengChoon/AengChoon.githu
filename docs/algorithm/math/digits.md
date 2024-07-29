@@ -23,12 +23,12 @@ last_modified_date: 2024-07-29
 
 ## 코어 로직
 ```cpp
-void Digits(int Number)
+void Digits(int Number, int Base)
 {
     while (Number != 0)
     {
-        int Digit = Number % 10;
-        Number = Number / 10;
+        int Digit = Number % Base;
+        Number = Number / Base;
     }
 }
 ```
@@ -41,4 +41,5 @@ void Digits(int Number)
 Basic
 {: .label .label-blue }
 
-[GeeksforGeeks](https://www.geeksforgeeks.org/problems/sum-of-digits1742/1){: .btn .btn-green }
+[GeeksforGeeks](https://www.geeksforgeeks.org/problems/sum-of-digits1742/1){: .btn .btn-green .mr-2 }
+[LeetCode](https://leetcode.com/problems/sum-of-digits-in-base-k/){: .btn .btn-yellow }
