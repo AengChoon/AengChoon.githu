@@ -23,7 +23,7 @@ last_modified_date: 2024-07-29
 
 ## 코어 로직
 ```cpp
-void Digits(int Number, int Base)
+void Digits(int Base, int Number)
 {
     while (Number != 0)
     {
@@ -38,8 +38,8 @@ void Digits(int Number, int Base)
 ### 자릿수의 합
 {: .d-inline-block }
 
-Basic
+Easy
 {: .label .label-blue }
 
-[GeeksforGeeks](https://www.geeksforgeeks.org/problems/sum-of-digits1742/1){: .btn .btn-green .mr-2 }
-[LeetCode](https://leetcode.com/problems/sum-of-digits-in-base-k/){: .btn .btn-yellow }
+[![Static Badge](https://img.shields.io/badge/GeeksforGeeks-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white)](https://www.geeksforgeeks.org/problems/sum-of-digits1742/1)
+[![Static Badge](https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=white)](https://leetcode.com/problems/sum-of-digits-in-base-k/)
