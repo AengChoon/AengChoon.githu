@@ -30,4 +30,12 @@ x86-64에서 **source**는 **상수**로 지정하거나 **레지스터** 또는
 | Memory       | (r<sub>b</sub>, r<sub>i</sub>, _s_)           | M[R[r<sub>b</sub>] + R[r<sub>i</sub>] · _s_]          |
 | Memory       | _Imm_(r<sub>b</sub>, r<sub>i</sub>, _s_)      | M[_Imm_ + R[r<sub>b</sub>] + R[r<sub>i</sub>] · _s_]  |
 
-<iframe width="800px" height="200px" src="https://gcc.godbolt.org/e#g:!((g:!((g:!((h:codeEditor,i:(filename:'1',fontScale:14,fontUsePx:'0',j:1,lang:___c,selection:(endColumn:2,endLineNumber:5,positionColumn:2,positionLineNumber:5,selectionStartColumn:2,selectionStartLineNumber:5,startColumn:2,startLineNumber:5),source:'long+scale(long+x,+long+y,+long+z)%0A%7B%0A++++long+t+%3D+x+%2B+4+*+y+%2B+12+*+z%3B%0A++++return+t%3B%0A%7D'),l:'5',n:'1',o:'C+source+%231',t:'0')),k:50,l:'4',m:100,n:'0',o:'',s:0,t:'0'),(g:!((h:compiler,i:(compiler:cgsnapshot,filters:(b:'0',binary:'1',binaryObject:'1',commentOnly:'0',debugCalls:'1',demangle:'0',directives:'0',execute:'1',intel:'1',libraryCode:'0',trim:'1',verboseDemangling:'0'),flagsViewOpen:'1',fontScale:14,fontUsePx:'0',j:1,lang:___c,libs:!(),options:'-O',overrides:!(),selection:(endColumn:12,endLineNumber:5,positionColumn:12,positionLineNumber:5,selectionStartColumn:12,selectionStartLineNumber:5,startColumn:12,startLineNumber:5),source:1),l:'5',n:'0',o:'+x86-64+gcc+(trunk)+(Editor+%231)',t:'0')),header:(),k:50,l:'4',n:'0',o:'',s:0,t:'0')),l:'2',n:'0',o:'',t:'0')),version:4"></iframe>
+첫 번째 타입인 *immediate* 은 상수 값을 위한 타입이다.
+
+ATT 형식의 어셈블리 코드에서는 '$' 뒤에 표준 C 표기법으로 나타낸 정수를 붙여서 작성한다(예: $-577 또는 $0x1F).
+
+명령어에 따라 다양한 범위의 immediate 값을 허용하며, 어셈블러는 값을 인코딩하는 가장 압축된 방법을 자동으로 선택한다.
+
+두 번째 타입인 *register* 는 16개의 레지스터 중 하나의 8, 4, 2, 1바이트 내용을 위한 타입이다.
+
+r<sub>a</sub>로 임의의 레지스터 a를 나타내고 그 값은 R[r<sub>a</sub>]로 나타내어 레지스터 집합을 레지스터 식별자로 인덱싱된 배열 R로 간주한다.
