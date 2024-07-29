@@ -32,3 +32,11 @@ void Digits(int Number)
     }
 }
 ```
+
+## 문제
+
+### 자릿수의 합
+{: .d-inline-block }
+
+Basic
+{: .label .label-blue }
