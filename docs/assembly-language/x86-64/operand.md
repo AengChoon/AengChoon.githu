@@ -4,6 +4,8 @@ layout: default
 grand_parent: 어셈블리어
 parent: x86-64
 nav_order: 3
+published_date: 2024-07-29
+last_modified_date: 2024-07-29
 ---
 
 # 피연산자
