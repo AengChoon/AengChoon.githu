@@ -40,3 +40,5 @@ void Digits(int Number)
 
 Basic
 {: .label .label-blue }
+
+[GeeksforGeeks](https://www.geeksforgeeks.org/problems/sum-of-digits1742/1){: .btn .btn-green }
